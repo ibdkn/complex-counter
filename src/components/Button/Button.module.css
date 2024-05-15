@@ -1,0 +1,13 @@
+.Button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #191919;
+
+    border-radius: 10px;
+    background-color: #647199;
+
+    &:disabled {
+        opacity: .5;
+    }
+}

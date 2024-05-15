@@ -1,0 +1,57 @@
+.Counter {
+    padding: 20px;
+    width: 355px;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    border: 3px solid #647199;
+    border-radius: 20px;
+}
+
+.Display {
+    padding: 20px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    border: 3px solid #647199;
+    border-radius: 20px;
+}
+
+.Result {
+    font-size: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.Tooltip {
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.isMaxValue {
+    color: #ea3c3c;
+}
+
+.InvalidData {
+    color: #ea3c3c;
+}
+
+.Controls {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    border: 3px solid #647199;
+    border-radius: 20px;
+}

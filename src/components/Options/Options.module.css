@@ -1,0 +1,11 @@
+.Options {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.OptionText {
+    font-size: 22px;
+    color: #ffffff;
+}

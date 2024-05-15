@@ -1,0 +1,26 @@
+.Input {
+    padding: 5px;
+    max-width: 100px;
+
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+
+    background-color: transparent;
+    border: 2px solid #647199;
+    border-radius: 10px;
+
+    &:focus {
+        outline: 1px solid rgba(255, 255, 255, 0.5);
+    }
+
+    &::placeholder {
+        font-size: 18px;
+        color: #ffffff;
+    }
+}
+
+.isInvalidValue {
+    color: #ea3c3c;
+    border: 2px solid #ea3c3c;
+}
