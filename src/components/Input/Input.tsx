@@ -11,7 +11,7 @@ export const Input = ({type, value, isValidValue, onChange}: InputProps) => {
     return (
         <input
             className={isValidValue ? `${s.Input} ${s.isInvalidValue}` : `${s.Input}`}
-            type="text"
+            type={type}
             value={value}
             onChange={onChange}
         />

@@ -33,6 +33,7 @@ export const Counter = (props: CounterProps) => {
     const isValidStartValue = startValue >= maxValue || startValue < 0;
     const isMaxValue = maxValue === resultValue;
     const isStartValue = resultValue === startValue;
+    const isInvalidSettingsData = error === 'Invalid value';
 
     useEffect(() => {
         if (maxValue <= startValue || maxValue < zero || startValue < zero) {
@@ -40,8 +41,6 @@ export const Counter = (props: CounterProps) => {
         } else if (valuesChanged) {
             setError('Enter values and press "Set"')
         }
-        setLocalStorageNumber('startValue', startValue);
-        setLocalStorageNumber('maxValue', maxValue);
     }, [maxValue, startValue, valuesChanged]);
 
     const changeMaxValue = (e: ChangeEvent<HTMLInputElement>) => {
@@ -64,6 +63,8 @@ export const Counter = (props: CounterProps) => {
         setResultValue(startValue);
         setError('');
         setIsShowSettings(false);
+        setLocalStorageNumber('startValue', startValue);
+        setLocalStorageNumber('maxValue', maxValue);
     }
 
     const incrementValue = () => {
@@ -102,6 +103,7 @@ export const Counter = (props: CounterProps) => {
                         <div className={s.Controls}>
                             <Button
                                 title="set"
+                                disabled={isInvalidSettingsData}
                                 callback={setInitialData}
                             />
                         </div>
